@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+.no-display {
+  display: none;
+}
+
+.it {
+  font-style: italic;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 101;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(242, 242, 242, 0.5);
+}
+
+.navbar h1 {
+  margin-left: 1rem;
+  margin-top: 13px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.navbar ul {
+  margin-right: 1rem;
+  margin-top: 12px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 8px 1rem;
+}
+
+.navbar a,
+footer a,
+.dropdown a {
+  text-decoration: none;
+  color: #111;
+}
+
+.navbar a:hover,
+footer a:hover,
+.dropdown a:hover {
+  color: #888;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 6rem;
+  line-height: 1.5;
+  font-size: 22px;
+}
+
+.text-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.parallax {
+  min-height: 500px;
+  background: transparent;
+}
+
+footer {
+  background: #f2f2f2;
+  color: #111;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+footer a {
+  margin-right: 0.5rem;
+}
+
+.dropdown {
+  background: rgba(242, 242, 242, 0.9);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  z-index: 101;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 5px;
+  transition: all 0.5s ease-in;
+}
+
+.dropdown a {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.dropdown-nav {
+  margin-top: 1.2rem;
+}
+
+.dropdown-nav li {
+  margin: 0.2rem;
+  padding: 8px 16px;
+}
+
+@media (max-width: 680px) {
+  .hide-on-small {
+    display: none;
+  }
+
+  .navbar {
+    background: rgba(242, 242, 242, 0.9);
+  }
+
+  .navbar h1 {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+
+  .container {
+    font-size: 16px;
+  }
+
+  .text-container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .parallax {
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 681px) {
+  .show-on-small {
+    display: none;
+  }
+}
